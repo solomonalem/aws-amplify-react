@@ -1,11 +1,14 @@
 import React from 'react';
-
-const Card = React.lazy(() => import('./Card'));
+import { Routes, Route } from 'react-router-dom';
+import Card from './Card';
 
 const Home = () => {
 	return (
 		<>
-			<Card />
+			{' '}
+			<Routes>
+				<Route path='/' element={<Card />} />
+			</Routes>
 		</>
 	);
 };

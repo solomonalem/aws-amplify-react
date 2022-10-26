@@ -19,6 +19,7 @@ const FormInput = () => {
 	console.log(stateObj[stateName]);
 	return (
 		<>
+			<h2>Fill the form below</h2>
 			<form onSubmit={handleSubmit}>
 				<input type='text' placeholder='name' />
 				<input type='text' placeholder='email' />
