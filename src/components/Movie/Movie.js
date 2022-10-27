@@ -27,9 +27,9 @@ const Movie = () => {
 	}, [search]);
 	return (
 		<div>
+			<h1 className='movies-header'>Movies</h1>
 			<form onSubmit={handleSubmit}>
 				<>
-					<label htmlFor='movie-search'>Any movie in particular </label>
 					<input
 						className='m-search'
 						name='movie'
@@ -39,7 +39,7 @@ const Movie = () => {
 					/>
 				</>
 
-				<button value='submit'>search</button>
+				<button  value='submit'>search</button>
 			</form>
 
 			<div className='movies'>

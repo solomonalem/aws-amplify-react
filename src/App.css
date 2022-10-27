@@ -27,13 +27,18 @@ header {
 	background-color: rgb(27, 7, 7);
 }
 .movie-item {
-	background-color: #fff;
-	border: 1px solid black;
-	margin: 5px;
+	background-color: rgb(36, 7, 7);
+	border: 3px solid rgb(66, 34, 34);
+	margin: 8px;
+	min-width: 200px;
+	min-height: 210px;
+	border-radius: 9px;
+	overflow: hidden;
 }
 .movie-item .image img {
 	width: 100%;
 	max-height: 150px;
+	/* border-radius: 10px; */
 }
 .movie-item .image {
 }
@@ -46,6 +51,9 @@ header {
 	white-space: nowrap;
 	display: block;
 	max-width: 130px;
+}
+.movie-name {
+	padding: 4px;
 }
 button {
 	padding: 6px 29px;
@@ -114,7 +122,10 @@ span img {
 		transform: rotate(360deg);
 	}
 }
-
+.movies-header {
+	align-items: center;
+	text-align: center;
+}
 #card {
 	display: flex;
 	justify-content: space-evenly;
@@ -174,13 +185,13 @@ select {
 	position: fixed;
 	z-index: 100;
 	bottom: 0;
-	padding: 10px;
+	padding: 10px 0;
 	background-color: rgb(16, 26, 55);
 }
 .back-to-home .btn-home {
 	display: inline-block;
-	width: 55px;
-	height: 55px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	background-color: rgb(173, 185, 229);
 	border: 8px solid rgba(55, 74, 134);
